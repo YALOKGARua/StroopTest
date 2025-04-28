@@ -1,0 +1,13 @@
+{
+    "screen_width": 1280,
+    "screen_height": 720,
+    "display_mode": "fullscreen",
+    "language": "english",
+    "trial_count": 10,
+    "button_width": 150,
+    "button_height": 80,
+    "button_spacing": 20,
+    "font_size": 74,
+    "small_font_size": 36,
+    "square_size": 100
+}
