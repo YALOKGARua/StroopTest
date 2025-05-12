@@ -3,7 +3,7 @@ import random
 import json
 import platform
 import asyncio
-from typing import Dict, List, Tuple, Optional, Callable
+from typing import Dict, List, Tuple, Callable
 from dataclasses import dataclass
 from pathlib import Path
 from localization import Localization

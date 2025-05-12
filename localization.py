@@ -176,12 +176,8 @@ class Localization:
             return color
 
     def add_translation(self, language: str, translations: Dict[str, Any]) -> None:
-        if not isinstance(translations, dict):
-            raise LocalizationError("Translations must be a dictionary")
-        
-        if "colors" not in translations:
-            raise LocalizationError("Translations must include color names in 'colors' dictionary")
-            
+        if not isinstance(translations, dict) or "colors" not in translations:
+            raise LocalizationError("Translations must be a dictionary with 'colors' section")
         self._translations[language] = translations
         self.SUPPORTED_LANGUAGES.add(language)
         self.save_translations()
